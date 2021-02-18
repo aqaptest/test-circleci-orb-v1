@@ -7,7 +7,7 @@ jobs:
        CLOUDQA_BROWSER: Chrome
        CLOUDQA_BUILD_TAG: "Parallel test"
        CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
-       CLOUDQA_VARIABLES:"var1=val1,var2=val2"
+       CLOUDQA_VARIABLES: "var1=val1,var2=val2"
        CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
     machine:
       image: ubuntu-2004:202010-01 # recommended linux image
