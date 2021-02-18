@@ -19,6 +19,5 @@ jobs:
       image: ubuntu-2004:202010-01 # recommended linux image
     steps:
       - run: sudo apt-get update && sudo apt-get install -y jq
-      #- run: curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
-      #- run: bash cloudqa-app-travisci.sh
+      - run: curl -O https://cquserfiles.s3.amazonaws.com/6394/6312094a6e5f4c0fa85a19776c2b14a1/cloudqa-app-circleci.sh
       - run: bash cloudqa-app-circleci.sh
