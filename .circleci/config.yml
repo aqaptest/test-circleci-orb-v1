@@ -4,10 +4,20 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+  parameters:
+  to:
+    type: string
+    default: "World"
+    description: "Hello to whom?"
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      steps:
+      - run:
+          environment:
+            PARAM_TO: <<parameters.to>>
+          name: Hello Greeting
+          command: <<include(greet.sh)>>
