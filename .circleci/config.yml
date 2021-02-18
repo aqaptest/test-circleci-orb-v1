@@ -9,7 +9,7 @@ jobs:
        CLOUDQA_BASE_URL="http://www.seleniumeasy.com/"
        CLOUDQA_SEQUENTIAL_EXECUTION:FALSE
     docker:
-      - image: cloudqa/docker-cli
+      - image: docker:17.05.0-ce-git
     steps:
       - run: sudo apt-get update && sudo apt-get install -y jq
       - run: curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
