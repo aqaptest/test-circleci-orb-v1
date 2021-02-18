@@ -10,6 +10,9 @@ jobs:
        CLOUDQA_SEQUENTIAL_EXECUTION:FALSE
     #docker:
     #  - image: docker:17.05.0-ce-git
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
+    resource_class: large
     steps:
       - run: sudo apt-get update && sudo apt-get install -y jq
       - run: curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
