@@ -1,8 +1,13 @@
 version: 2
 jobs:
   build:
+    parameters:
+      apikey:
+        type: string
+        default: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+        description: "cloud qa api key"
     environment:
-       CLOUDQA_API_KEY:"MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+       CLOUDQA_API_KEY:<<parameters.apikey>>
        CLOUDQA_SUITE_ID:2096
        CLOUDQA_BROWSER:Chrome
        CLOUDQA_BUILD_TAG:"Parallel test"
