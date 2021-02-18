@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     environment:
-	CLOUDQA_API_KEY:"MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
-	CLOUDQA_SUITE_ID:2096
-	CLOUDQA_BROWSER:Chrome
-	CLOUDQA_BUILD_TAG:"Parallel test"
-	CLOUDQA_BASE_URL="http://www.seleniumeasy.com/"
-	CLOUDQA_SEQUENTIAL_EXECUTION:FALSE
+	  CLOUDQA_API_KEY:"MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+	  CLOUDQA_SUITE_ID:2096
+	  CLOUDQA_BROWSER:Chrome
+	  CLOUDQA_BUILD_TAG:"Parallel test"
+	  CLOUDQA_BASE_URL="http://www.seleniumeasy.com/"
+	  CLOUDQA_SEQUENTIAL_EXECUTION:FALSE
     docker:
-    - image: cloudqa/docker-cli
+	  - image: cloudqa/docker-cli
     steps:
       - run: sudo apt-get update && sudo apt-get install -y jq
       - run: curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
