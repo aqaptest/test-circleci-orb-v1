@@ -1,23 +1,18 @@
 version: 2
 jobs:
   build:
-    parameters:
-      apikey:
-        type: string
-        default: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
-        description: "cloud qa api key"
     environment:
-       CLOUDQA_API_KEY:<<parameters.apikey>>
-       CLOUDQA_SUITE_ID:2096
-       CLOUDQA_BROWSER:Chrome
-       CLOUDQA_BUILD_TAG:"Parallel test"
-       CLOUDQA_BASE_URL="http://www.seleniumeasy.com/"
-       CLOUDQA_SEQUENTIAL_EXECUTION:FALSE
+       CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+       CLOUDQA_SUITE_ID: 2096
+       CLOUDQA_BROWSER: Chrome
+       CLOUDQA_BUILD_TAG: "Parallel test"
+       CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
+       CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
     #docker:
     #  - image: docker:17.05.0-ce-git
     machine:
       image: ubuntu-2004:202010-01 # recommended linux image
     steps:
       - run: sudo apt-get update && sudo apt-get install -y jq
-      - run: curl -O https://cquserfiles.s3.amazonaws.com/6394/6312094a6e5f4c0fa85a19776c2b14a1/cloudqa-app-circleci.sh
-      - run: bash cloudqa-app-circleci.sh
+      - run: curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
+      - run: bash cloudqa-app-travisci.sh
