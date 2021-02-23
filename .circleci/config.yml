@@ -9,6 +9,7 @@ jobs:
        CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
        CLOUDQA_VARIABLES: "cicd1=3,cicd2=3,cicd3=6"
        CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
+       CLOUDQA_ENVIRONMENT_NAME="p"
     machine:
       image: ubuntu-2004:202010-01 # recommended linux image
     steps:
