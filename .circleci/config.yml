@@ -3,10 +3,10 @@ jobs:
   build:
     environment:
        CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
-       CLOUDQA_SUITE_ID: 2096
+       CLOUDQA_SUITE_ID: 2004
        CLOUDQA_BROWSER: Chrome
-       CLOUDQA_BUILD_TAG: "Parallel test"
-       CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
+       CLOUDQA_BUILD_TAG: "Parallel test Circle CI"
+       CLOUDQA_BASE_URL: "http://the-internet.herokuapp.com/"
        CLOUDQA_VARIABLES: "var1=val1,var2=val2"
        CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
     machine:
