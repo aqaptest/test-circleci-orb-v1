@@ -2,11 +2,11 @@ version: 2
 jobs:
   build:
     environment:
-       CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
-       CLOUDQA_SUITE_ID: 2682
-       CLOUDQA_BROWSER: IE
-       CLOUDQA_BUILD_TAG: "Variable test Circle CI"
-       CLOUDQA_BASE_URL: "http://www.seleniumeasy.com/"
+       CLOUDQA_API_KEY: "Xs0yDZuD1jCGJPuJDCdNEfBfgy6cCLvztrW9lWomkPo="
+       CLOUDQA_SUITE_ID: 4586
+       CLOUDQA_BROWSER: Chrome
+       CLOUDQA_BUILD_TAG: "Travis CI demo"
+       CLOUDQA_BASE_URL: "http://demo.testfire.net/"
        CLOUDQA_VARIABLES: "cicd1=3,cicd2=3,cicd3=6"
        CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
        CLOUDQA_ENVIRONMENT_NAME: "p"
