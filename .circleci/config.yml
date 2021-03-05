@@ -16,4 +16,3 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y jq
       - run: curl -O https://cquserfiles.s3.amazonaws.com/6394/28cb57ae611041d2a44ae2bcb3bbad66/cloudqa-app-circleci.sh
       - run: bash cloudqa-app-circleci.sh
-
