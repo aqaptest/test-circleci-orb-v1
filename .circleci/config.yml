@@ -5,7 +5,7 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - run: src/commands/test
+      - run: ./src/commands/test
 workflows:
   version: 2
   build:
