@@ -8,6 +8,9 @@ steps:
     CLOUDQA_VARIABLES: "cicd1=3,cicd2=3,cicd3=6"
     CLOUDQA_SEQUENTIAL_EXECUTION: FALSE
     CLOUDQA_ENVIRONMENT_NAME: "p"
-  - run: sudo apt-get update && sudo apt-get install -y jq
-  - run: curl -O https://cquserfiles.s3.amazonaws.com/6394/28cb57ae611041d2a44ae2bcb3bbad66/cloudqa-app-circleci.sh
-  - run: bash cloudqa-app-circleci.sh
+  - run:
+    command: sudo apt-get update && sudo apt-get install -y jq
+  - run:
+    command: curl -O https://cquserfiles.s3.amazonaws.com/6394/28cb57ae611041d2a44ae2bcb3bbad66/cloudqa-app-circleci.sh
+  - run:
+    command: bash cloudqa-app-circleci.sh
