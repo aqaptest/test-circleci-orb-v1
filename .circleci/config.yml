@@ -5,7 +5,9 @@ jobs:
       image: ubuntu-2004:202010-01
     steps:
       - checkout
-      - test
+      - run:
+          name: Run tests
+          command: test
 workflows:
   version: 2
   build:
