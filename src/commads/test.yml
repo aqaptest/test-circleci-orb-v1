@@ -1,4 +1,5 @@
 steps:
+  - run: sudo apt-get update && sudo apt-get install -y jq
   - run:
       environment:
         CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
