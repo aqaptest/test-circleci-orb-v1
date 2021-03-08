@@ -1,5 +1,8 @@
 version: 2.1
-  
+
+orbs:
+  testsuite-runner: cloudqa/testsuite-runner@1.0.0
+
 executors:
   machine-executor:
     machine:
