@@ -1,4 +1,0 @@
-description: Sample CloudQA suite execution.
-executor: default
-  steps:
-    - execute-suite
