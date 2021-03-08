@@ -1,3 +1,4 @@
+description: Sample CloudQA suite execution.
 executor: default
   steps:
-    - test
+    - execute-suite
