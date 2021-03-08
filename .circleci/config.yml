@@ -1,7 +1,4 @@
 version: 2.1
-
-orbs:
-  aqaptest: aqaptest/testsuite-runner@1.0.0
   
 executors:
   machine-executor:
