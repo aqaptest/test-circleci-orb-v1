@@ -1,4 +1,5 @@
 version: 2.1
+description: Execute your CloudQA test suites within your CircleCI build environment.
 display:
   home_url: "https://doc.cloudqa.io/CircleCI.html"
   source_url: "https://github.com/aqaptest/test-circleci-orb-v1"
