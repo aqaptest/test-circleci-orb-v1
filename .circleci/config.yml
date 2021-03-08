@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  test-circleci-orb-v1: aqaptest/test-circleci-orb-v1@1.0.0
+  
 executors:
   machine-executor:
     machine:
