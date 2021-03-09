@@ -1,8 +1,8 @@
 version: 2.1
 
-orbs:
-  orb-tools: circleci/orb-tools@10.0.3
-  aqaptest: aqaptest/testsuite-runner@1.0.0
+#orbs:
+  #orb-tools: circleci/orb-tools@10.0.3
+  #aqaptest: aqaptest/testsuite-runner@1.0.0
   
 executors:
   machine-executor:
