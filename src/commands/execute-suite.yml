@@ -6,7 +6,7 @@ steps:
       command: curl -O https://cquserfiles.s3.amazonaws.com/6394/28cb57ae611041d2a44ae2bcb3bbad66/cloudqa-app-circleci.sh
   - run:
       environment:
-        CLOUDQA_API_KEY: "MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI="
+        CLOUDQA_API_KEY: "Your-API-KEY"
         CLOUDQA_SUITE_ID: 2682
         CLOUDQA_BROWSER: Chrome
         CLOUDQA_BUILD_TAG: "Travis CI demo"
